@@ -10,7 +10,7 @@ Le project est basé sous `QT` et utilise `qcusomplot` comme bibliothèque graph
 
 ## Authors
 
-- [@wZaWzA1e](https://github.com/wZaWzA1e)
+- [@wZaWzA1e](https://github.com/wZaWzA1)
 
 
 ## Contributing
