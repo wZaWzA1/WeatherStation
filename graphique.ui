@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>graphique</class>
+ <widget class="QDialog" name="graphique">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1126</width>
+    <height>903</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Graphique</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="logo/logo.qrc">
+    <normaloff>:/rc/graphique.png</normaloff>:/rc/graphique.png</iconset>
+  </property>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>0</y>
+     <width>20</width>
+     <height>901</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>9</y>
+     <width>161</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="ScrollContent">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>159</width>
+      <height>249</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QCustomPlot" name="Direction" native="true">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>340</y>
+     <width>271</width>
+     <height>261</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="GPS" native="true">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>340</y>
+     <width>261</width>
+     <height>261</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="Angle" native="true">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>340</y>
+     <width>281</width>
+     <height>261</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="Vent" native="true">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>10</y>
+     <width>271</width>
+     <height>271</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="Pression" native="true">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>10</y>
+     <width>281</width>
+     <height>271</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="Temperature" native="true">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>10</y>
+     <width>261</width>
+     <height>271</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TemperatureLabel">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>290</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Temperature</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="PressionLabel">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>290</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Pression</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VentLabel">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>290</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Vent</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="AngleLabel">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>610</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Angle du Vent</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="GPSLabel">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>610</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>GPS</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="DirectionLabel">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>610</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Direction</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TempButton">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>290</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PressionButton">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>290</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VentButton">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>290</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AngleButton">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>610</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="DirectionButton">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>610</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="GPSButton">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>610</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="logo/logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>

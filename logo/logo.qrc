@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>rc/white-arrow-png-transparent-20-removebg-preview.png</file>
+        <file>rc/pression.png</file>
+        <file>rc/vent.png</file>
+        <file>rc/rapporteur.png</file>
+        <file>rc/console.png</file>
+        <file>rc/close.png</file>
+        <file>rc/icon.png</file>
+        <file>rc/eolien.png</file>
+        <file>rc/temperature.png</file>
+        <file>rc/gps.png</file>
+        <file>rc/aiguille.png</file>
+        <file>rc/time.png</file>
+        <file>rc/graphique.png</file>
+        <file>rc/Martz90-Circle-Settings.512.ico</file>
+    </qresource>
+</RCC>

@@ -9,3 +9,13 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
+*.idx
+/debug
+/release
+qcustomplot2.dll
+Makefile.Debug
+Makefile.Release
+*.stash
+weather_port.pro.user.c340bc7
+weather_port_resource.rc
+weather_port.pro.user

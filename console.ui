@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>console</class>
+ <widget class="QDialog" name="console">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>438</width>
+    <height>305</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Console</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="logo/logo.qrc">
+    <normaloff>:/rc/console.png</normaloff>:/rc/console.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="5" column="1">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Pause</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QPushButton" name="Export">
+     <property name="text">
+      <string>Export Console</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QCheckBox" name="Autoscroll">
+     <property name="layoutDirection">
+      <enum>Qt::RightToLeft</enum>
+     </property>
+     <property name="text">
+      <string>Défilement automatique</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QPushButton" name="Effacer">
+     <property name="text">
+      <string>Effacer</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" rowspan="3" colspan="4">
+    <widget class="QPlainTextEdit" name="Console">
+     <property name="undoRedoEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="logo/logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>
